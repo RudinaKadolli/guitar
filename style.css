@@ -1,0 +1,338 @@
+body {
+  width: 1181px;
+  margin: 20px auto; 
+ 
+
+}
+
+.container {
+  width: 1350px;
+  background-image: url("photo/bcg.png");
+  background-repeat: no-repeat;
+  position: relative;
+
+}
+
+ .logo {
+  width: 798px;
+    background-image: url(photo/logo.png);
+    background-size: 106%;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 172px;
+    margin-left: 337px;
+    margin-top: 664px;
+ }
+
+ .logo1 {
+  width: 798px;
+  background-image: url(photo/unique.png);
+  background-size: 13%;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 337px;
+  margin-left: -174px;
+  margin-top: 170px;
+ }
+
+
+h1 {
+    position: absolute;
+    margin: 0 auto;
+    font-size: 2em;
+    text-align: center;
+    background-color: #545d91c9;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgb(255 255 255 / 20%) 0px 1px 3;
+}
+
+h1#title.imgTitle {
+  text-shadow: 0 0 25px rgba(20, 139, 255, 0.8),
+    0 0 15px rgba(30, 144, 255, 0.54);
+}
+
+button.string {
+  border-radius: 100%;
+  border: none;
+  float: left;
+  width: 20px;
+  height: inherit;
+  outline: none;
+  cursor: pointer;
+  padding: 0 !important;
+  z-index: 1;
+}
+
+button#s1 {
+  height: 44.9rem;
+  margin-top: -65px;
+  transform: translate(544px) rotate(90deg);
+}
+button#s2 {
+  height: 45rem;
+  margin-top: -78px;
+  transform: translate(582px) rotate(90deg);
+}
+button#s3 {
+  height: 45rem;
+  margin-top: -88px;
+  transform: translate(624px) rotate(90deg);
+}
+button#s4 {
+  height: 45rem;
+  margin-top: -100px;
+  transform: translate(658px) rotate(90deg);
+}
+button#s5 {
+  height: 45rem;
+  margin-top: -113px;
+  transform: translate(701px) rotate(90deg);
+}
+button#s6 {
+  height: 45rem !important;
+  margin-top: -217px;
+  transform: translate(739px) rotate(90deg);
+}
+
+#guitarBody button {
+  background-repeat: repeat-y;
+  background-position: center center;
+  background-color: transparent;
+}
+
+#s1 {
+  position: absolute;
+  top: 3px;
+  left: 17px;
+  background-image: url(photo/teli.png);
+}
+#s2 {
+  position: absolute;
+  top: 5px;
+  left: -21px;
+  background-image: url(photo/teli2.png);
+}
+#s3 {
+  position: absolute;
+  top: 5px;
+  left: -62px;
+  background-image: url(photo/teli3.png);
+}
+#s4 {
+  position: absolute;
+  top: 6px;
+  left: -97px;
+  background-image: url(photo/teli4.png);
+}
+#s5 {
+  position: absolute;
+  top: 8px;
+  left: -139px;
+  background-image: url(photo/teli5.png);
+}
+#s6 {
+  position: absolute;
+  top: 101px;
+  left: -186px;
+  background-image: url(photo/teli6.png);
+}
+
+#s1:hover {
+  background-image: url(photo/brillo1.png), url(photo/teli1.png);
+}
+#s2:hover {
+  background-image: url(photo/brillo1.png), url(photo/teli2.png);
+}
+#s3:hover {
+  background-image: url(photo/brillo2.png), url(photo/teli3.png);
+}
+#s4:hover {
+  background-image: url(photo/brillo2.png), url(photo/teli4.png);
+}
+#s5:hover {
+  background-image: url(photo/brillo3.png), url(photo/teli5.png);
+}
+#s6:hover {
+  background-image: url(photo/brillo3.png), url(photo/teli6.png);
+}
+
+#guitarBody button.string.playingSound {
+  background-repeat: repeat-y, repeat-y, no-repeat !important;
+  background-color: transparent;
+}
+#s1.string.playingSound {
+  background-image: url(photo/2.gif), url(photo/brillo1.png), url(photo/luz.png);
+}
+#s2.string.playingSound {
+  background-image: url(photo/3.gif), url(photo/brillo1.png), url(photo/luz.png);
+}
+#s3.string.playingSound {
+  background-image: url(photo/3.gif), url(photo/brillo1.png), url(photo/luz.png);
+}
+#s4.string.playingSound {
+  background-image: url(photo/4.gif), url(photo/brillo2.png), url(photo/luz.png);
+}
+#s5.string.playingSound {
+  background-image: url(photo/5.gif), url(photo/brillo2.png), url(photo/luz.png);
+}
+#s6.string.playingSound {
+  background-image: url(photo/6.gif), url(photo/brillo3.png), url(photo/luz.png);
+}
+
+/******** CONTROLS *******/
+
+footer button {
+font-size: 0;
+height: 6vh;
+width: 116px;
+margin: 3vh 1vh 0;
+border: none;
+outline: none;
+font-weight: bold;
+color: transparent;
+cursor: pointer;
+text-align: center;
+transform: translate(550px, -80px);
+}
+
+/******* buttons ******/
+#btnStop {
+  background: url(photo/on.png) no-repeat center right / contain;
+  text-align: left;
+}
+#btnHold {
+  background: url(photo/switch.png) no-repeat center left / contain;
+  text-align: right;
+}
+#btnHold:after , #btnStop:before {
+content: "HOLD";
+font-size: 16px;
+background-color: #333333;
+-webkit-background-clip: text;
+-moz-background-clip: text;
+background-clip: text;
+color: transparent;
+text-shadow: rgba(255,255,255,0.5) 0px 1px 3px;
+}
+#btnStop:before {
+content: "STOP";
+}
+#btnHold.active:after, #btnHold:active:after {
+text-shadow: 0px 1px 3px rgba(255,255,255,0.3), 0 0 15px #59a0f4, 0 0 20px #59a0f4, 0 0 25px #59a0f4, 0 0 30px #59a0f4, 0 0 35px #59a0f4;
+color: #1e90ff;
+}
+#btnStop:active:before {
+text-shadow: rgba(255,255,255,0.5) 0px 1px 3px, 0 0 15px #ff0000, 0 0 20px #ff0000, 0 0 25px #ff0000;
+color: #ff0000;
+}
+#btnStop:active {
+  background: url(photo/off.png) no-repeat center right / contain;
+}
+#btnHold.active,
+#btnHold:active {
+  background: url(photo/hold.png) no-repeat center left / contain;
+}
+/****** pick *****/
+#btnPick {
+  background: url(photo/pick-off.png) no-repeat center center / contain;
+  width: 100px;
+  font-size: 22px;
+}
+#btnPick.active {
+  background: url(photo/pick-on.png) no-repeat center center / contain;
+}
+section.pickActive , section.pickActive .string{
+cursor: url(photo/pua.png) 30 70, auto;
+}
+
+
+
+/* NOTES */
+.notes {
+  top: 100px;
+  z-index: -1;
+  display: inline-block;
+  color: #ffffffd6;
+  text-align: center;
+  font-size: 42px;
+  z-index: 0;
+  text-shadow: -1px -1px 1px #000000, 0px 0px 1px #6f6f6f;
+}
+.notes .lightOn,
+.notes .lightOn span {
+  color: #71abeb;
+  text-shadow: 0px 0px 15px #3779c5, 0px 0px 25px #3779c5, 0px 0px 35px #71abeb,
+    -1px -1px 1px #000000, 0px 0px 1px #6f6f6f;
+  transition: all 0.2s ease;
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    outline: none;
+  }
+  button#s6 {
+    height: 49.05rem;
+    margin-top: -216px;
+    transform: translate(748px) rotate(90deg);
+  }
+}
+@media all and (max-width: 1024px) {
+  body {
+    margin: 0;
+    background-size: 121vh;
+    background-repeat: no-repeat;
+    background-position-y: 132px;
+    outline: none;
+  }
+  button#s6 {
+    height: 36.05rem;
+    left: -20px;
+    transform: translate(591px) rotate(90deg);
+  }
+  button#s5 {
+    height: 45rem;
+    left: 42px;
+    transform: translate(530px) rotate(90deg);
+  }
+  button#s4 {
+    height: 45rem;
+    left: 42px;
+    transform: translate(530px) rotate(90deg);
+  }
+  button#s3 {
+    height: 45rem;
+    left: 44px;
+    transform: translate(530px) rotate(90deg);
+  }
+  button#s2 {
+    height: 45rem;
+    left: 45px;
+    transform: translate(530px) rotate(90deg);
+  }
+  button#s1 {
+    height: 45rem;
+    left: 45px;
+    transform: translate(530px) rotate(90deg);
+  }
+  button.string {
+    width: 4px;
+    border-radius: 50%;
+  }
+
+  /* Hide Pick if we have an inaccurate pointing device */
+  @media (pointer: coarse) {
+    #btnPick {
+      display: none !important;
+    }
+  }
+
+  /* Hide Pick if orientation is portrait (vertical)*/
+  @media only screen and (orientation: portrait) {
+    #btnPick {
+      display: none !important;
+    }
+  }
+}
